@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Admin Dashboard</title>
 </head>
@@ -17,11 +20,11 @@
             <div class="search">
 
                 <div class="search-bar">
-                    <img src="img/github-mark.png" alt="" class="search-icon">
-                    <input type="search">
+                    <label for="search"><img src="img/magnify.svg" alt="" class="search-icon"></label>
+                    <input type="search" id="search">
                 </div>
                 <div class="profile-container">
-                    <img src="img/github-mark.png" alt="" class="alert">
+                    <img src="img/bell-ring-outline.svg" alt="" class="alert">
                     <img src="img/github-mark.png" alt="" class="profile-icon">
                     <span class="title">Your name here</span>
                 </div>
@@ -48,18 +51,21 @@
 
         <nav class="sidebar">
 
-            <h1>Dashboard</h1>
-            <ul class="dashboard">
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
-                <li>Setting</li>
-                <li>Support</li>
-                <li>Privacy</li>
-            </ul>
+            <div class="logo-container">
+                <img src="img/github-mark.png" alt="" class="logo">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="dashboard">
+                <span><img src="img/home.svg" alt="house" class="svg">Home</span>
+                <span><img src="img/account.svg" alt="person" class="svg">Profile</span>
+                <span><img src="img/message.svg" alt="chat icon" class="svg">Messages</span>
+                <span><img src="img/history.svg" alt="clock rewind" class="svg">History</span>
+                <span><img src="img/folder.svg" alt="folder image" class="svg">Tasks</span>
+                <span><img src="img/account-group.svg" alt="multiple people" class="svg">Communities</span>
+                <span><img src="img/cogs.svg" alt="gears" class="svg">Setting</span>
+                <span><img src="img/tooltip-question.svg" alt="question mark" class="svg">Support</span>
+                <span><img src="img/shield-lock.svg" alt="shield with lock" class="svg">Privacy</span>
+            </div>
 
         </nav>
 
@@ -72,9 +78,9 @@
                     non voluptatem quam beatae, quidem quaerat id quas natus optio, officia distinctio et fugit ipsa eum
                     debitis a autem sunt?</p>
                 <div class="card-support">
-                    <img src="img/github-mark.png" alt="" class="favourites">
-                    <img src="img/github-mark.png" alt="" class="favourites">
-                    <img src="img/github-mark.png" alt="" class="favourites">
+                    <img src="img/star-plus-outline.svg" alt="" class="favourites">
+                    <img src="img/eye-plus-outline.svg" alt="" class="favourites">
+                    <img src="img/share-variant-outline.svg" alt="" class="favourites">
                 </div>
             </div>
             <div class="card">
@@ -86,9 +92,9 @@
                     Consequuntur suscipit libero non autem doloribus, ipsa et expedita, vel deserunt eos vitae quisquam
                     mollitia excepturi dicta!</p>
                 <div class="card-support">
-                    <img src="img/github-mark.png" alt="" class="favourites">
-                    <img src="img/github-mark.png" alt="" class="favourites">
-                    <img src="img/github-mark.png" alt="" class="favourites">
+                    <img src="img/star-plus-outline.svg" alt="" class="favourites">
+                    <img src="img/eye-plus-outline.svg" alt="" class="favourites">
+                    <img src="img/share-variant-outline.svg" alt="" class="favourites">
                 </div>
             </div>
             <div class="card">
@@ -97,9 +103,9 @@
                     perferendis consequuntur. Esse aspernatur, ipsa quibusdam ut molestias inventore veniam at ad quod
                     perferendis dolorum odit expedita sed nam voluptate.</p>
                 <div class="card-support">
-                    <img src="img/github-mark.png" alt="" class="favourites">
-                    <img src="img/github-mark.png" alt="" class="favourites">
-                    <img src="img/github-mark.png" alt="" class="favourites">
+                    <img src="img/star-plus-outline.svg" alt="" class="favourites">
+                    <img src="img/eye-plus-outline.svg" alt="" class="favourites">
+                    <img src="img/share-variant-outline.svg" alt="" class="favourites">
                 </div>
             </div>
             <div class="card">
@@ -108,9 +114,9 @@
                     Beatae laboriosam perferendis praesentium repellat vero eos accusantium amet, labore tempore nam
                     autem dignissimos, eligendi unde earum fugit?</p>
                 <div class="card-support">
-                    <img src="img/github-mark.png" alt="" class="favourites">
-                    <img src="img/github-mark.png" alt="" class="favourites">
-                    <img src="img/github-mark.png" alt="" class="favourites">
+                    <img src="img/star-plus-outline.svg" alt="" class="favourites">
+                    <img src="img/eye-plus-outline.svg" alt="" class="favourites">
+                    <img src="img/share-variant-outline.svg" alt="" class="favourites">
                 </div>
             </div>
             <div class="card">
@@ -119,9 +125,9 @@
                     ut animi obcaecati, architecto cupiditate officia beatae temporibus laborum impedit expedita
                     laudantium, reiciendis possimus rem soluta maiores laboriosam.</p>
                 <div class="card-support">
-                    <img src="img/github-mark.png" alt="" class="favourites">
-                    <img src="img/github-mark.png" alt="" class="favourites">
-                    <img src="img/github-mark.png" alt="" class="favourites">
+                    <img src="img/star-plus-outline.svg" alt="" class="favourites">
+                    <img src="img/eye-plus-outline.svg" alt="" class="favourites">
+                    <img src="img/share-variant-outline.svg" alt="" class="favourites">
                 </div>
             </div>
             <div class="card">
@@ -130,9 +136,9 @@
                     fugiat perspiciatis reprehenderit reiciendis, consectetur quasi iure culpa ea deleniti excepturi
                     recusandae tenetur officiis eveniet magnam quam asperiores.</p>
                 <div class="card-support">
-                    <img src="img/github-mark.png" alt="" class="favourites">
-                    <img src="img/github-mark.png" alt="" class="favourites">
-                    <img src="img/github-mark.png" alt="" class="favourites">
+                    <img src="img/star-plus-outline.svg" alt="" class="favourites">
+                    <img src="img/eye-plus-outline.svg" alt="" class="favourites">
+                    <img src="img/share-variant-outline.svg" alt="" class="favourites">
                 </div>
             </div>
 

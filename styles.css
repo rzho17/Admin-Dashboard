@@ -5,6 +5,7 @@ img {
 
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -12,19 +13,31 @@ body {
     min-height: 100vh;
 }
 
+/* HEADER CSS */
 .banner {
     display: flex;
     flex-direction: column;
     padding: 10px 20px;
 
-
-    border: 1px solid;
 }
 
 .search {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+#search {
+
+    font-size: 1.5rem;
+    width: 30rem;
+    height: 2rem;
+
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: aliceblue;
 }
 
 .search-bar,
@@ -54,6 +67,50 @@ body {
     display: flex;
 }
 
+.title-container .title {
+    font-size: .8rem;
+    padding-bottom: .2rem;
+}
+
+.title-container .title:last-child {
+    font-size: 1.5rem;
+}
+
 .media li {
+    display: inline;
+    padding: 10px 30px;
+    background-color: red;
+    border-radius: 25px;
+
+}
+
+
+.title,
+.media li {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+/* SIDEBAR CSS */
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.dashboard li {
+    grid-row: 2 /5;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+span {
     display: inline;
 }
