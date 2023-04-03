@@ -10,7 +10,7 @@ img {
 
 body {
     display: grid;
-    grid-template-columns: 20rem 3fr;
+    grid-template-columns: 15rem 3fr;
     grid-template-areas:
         "sd head head head"
         "sd main main main"
@@ -146,8 +146,18 @@ span {
 main {
     grid-area: main;
     display: grid;
-    grid-template-columns: 1fr 1fr .7fr;
+    grid-template-columns: 2fr 1fr;
 
+    padding: 3rem 3rem 3rem 1rem;
+    gap: 2rem;
+
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
 
 }
 
@@ -165,24 +175,17 @@ main {
     padding: 20px;
 }
 
-.card {
-    /* height: fit-content; */
-}
+
+.card {}
 
 .projects {
-    grid-column: 1 / 3;
+    grid-column: span 2;
     max-height: fit-content;
 }
 
-.announce {
-    grid-column: 3/ 4;
-    grid-row: 1/2;
-}
+.announce {}
 
-.trend {
-
-    grid-area: 3 / 3 / 4 /4;
-}
+.trend {}
 
 .card-title {
     margin-bottom: 0;
@@ -205,9 +208,7 @@ main {
 
 /* Announcements container */
 
-.announcements {
-    grid-area: 2 / 3 / 3 /4;
-}
+.announcements {}
 
 .announcements,
 .trending {
@@ -231,6 +232,4 @@ main {
     align-items: center;
     gap: 2rem 1rem;
 
-    grid-column: 3 /4;
-    grid-row: 3/5;
 }
