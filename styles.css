@@ -9,11 +9,23 @@ img {
 }
 
 body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+        "sd head head head"
+        "sd main main main"
+        "sd main main main"
+        "sd main main main";
     margin: 0;
     min-height: 100vh;
 }
 
 /* HEADER CSS */
+
+.container {
+    grid-area: head;
+}
+
 .banner {
     display: flex;
     flex-direction: column;
@@ -101,9 +113,11 @@ nav {
     display: grid;
     grid-template-columns: .01fr 1fr;
     /* grid-template-rows: repeat(7, 1fr) 1.5fr repeat(8, 1fr); */
+    justify-content: center;
+    align-items: center;
 
-
-    gap: .5em 1rem;
+    grid-area: sd;
+    gap: 1rem 1rem;
 }
 
 .logo-container {
@@ -112,12 +126,26 @@ nav {
     grid-column: 1 / 3
 }
 
+.communities,
+.space {
+    margin: 0 0 5rem;
+}
+
+.privacy,
+.bottom {
+    /* margin: 0 0 20rem; */
+}
+
 span {
     display: flex;
     align-items: center;
 }
 
 /* Main content */
+
+main {
+    grid-area: main;
+}
 
 .card,
 .announcements,
