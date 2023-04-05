@@ -181,7 +181,8 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
 
-    padding: 3rem 3rem 3rem 1rem;
+
+    padding: 3rem 3rem 3rem 3rem;
     gap: 2rem;
 
     background-color: #f7f7f7;
@@ -192,7 +193,6 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2.3rem 1fr 1fr 1fr;
-    /* justify-content: space-between; */
     align-content: end;
 
     gap: 2rem;
@@ -226,11 +226,7 @@ main {
 
 
 .card {
-
-    /* padding: 20px 50px 20px 20px; */
     justify-content: center;
-    /* align-items: center; */
-    /* height: 250px; */
 }
 
 .projects {
@@ -238,11 +234,6 @@ main {
     max-height: fit-content;
 }
 
-.announce {}
-
-.trend {
-    /* height: ; */
-}
 
 .card-title {
     margin-bottom: 0;
@@ -309,7 +300,6 @@ h4:hover,
 .bot li:hover {
     cursor: pointer;
     text-decoration: underline;
-    /* transition: width 5rem 2s; */
 }
 
 .alert:hover {
